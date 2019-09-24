@@ -1,0 +1,37 @@
+/* *Fonts */
+
+@font-face {
+  font-family: 'Segoe WP';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/font/SegoeWP.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/font/segoe-wp-light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/OpenSans-Regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/PTS55f-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Asap-Regular.otf') format('otf');
+}
+
