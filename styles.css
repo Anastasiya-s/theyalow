@@ -165,12 +165,12 @@ button::-moz-focus-inner,
   text-transform: uppercase;
 }
 
-
 .slider__buttons--mobile {
   display: none;
 }
 
 .video {
+  z-index: -1;
   position: relative;
   margin: 0;
   padding: 0;
@@ -215,7 +215,6 @@ button::-moz-focus-inner,
   background-color: transparent;
   width: 18px;
   height: 18px;
-
 }
 
 .volume {
@@ -230,4 +229,35 @@ button::-moz-focus-inner,
 
 .video__title--mobile {
   display: none;
+}
+
+.advantages {
+  min-height: 179px;
+  margin-top: -15px;
+  background:
+    url('./assets/images/advantages-bg.png') 0 0/ contain no-repeat,
+    url('./assets/images/advantages-bg.png') 0 5px/ contain no-repeat;
+}
+
+.advantages__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  display: flex;
+  flex-flow: column;
+  width: 30%;
+  padding: 40px 15px;
+}
+
+.advantages__text {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 23px;
+  text-transform: uppercase;
+  text-align: center;
 }
