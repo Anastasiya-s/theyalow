@@ -1,7 +1,7 @@
 /* *Fonts */
 
 @font-face {
-  font-family: 'SegoeWP';
+  font-family: 'Segoe WP';
   font-style: normal;
   font-weight: normal;
   src: url('./assets/font/SegoeWP.woff') format('woff');
@@ -94,10 +94,10 @@ button::-moz-focus-inner,
 }
 
 .header {
-  margin: 0;
   padding: 0;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .logo__wrapper {
@@ -121,13 +121,18 @@ button::-moz-focus-inner,
   color: #fff;
   text-transform: uppercase;
   text-shadow: 2px 2px 0  rgba(0, 0, 0, 0.42) ;
-  
+}
+
+.header__nav {
+  flex-grow: 1;
 }
 
 .header__list {
   display: flex;
   flex-flow: row nowrap;
-  margin: 0 auto;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
   padding: 0;
   list-style: none;
   background-image: url('./assets/images/header-bg.png');
@@ -136,21 +141,21 @@ button::-moz-focus-inner,
 .header__item {
   display: flex;
   flex-flow: row nowrap;
-  flex-grow: 1;
   margin: 0 auto;
   padding: 20px 10px;
-  vertical-align: middle;
-  align-items: center;
-  border-right: 1px solid #b99403;
+  border-left: 1px solid #b99403;
+}
 
+.header__item:first-child {
+  border-left: none;
 }
 
 .header__icon {
   display: inline-block;
   width: 25px;
   height: 25px;
-  display: inline;
-  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
 }
 
 .header__link {
@@ -158,5 +163,71 @@ button::-moz-focus-inner,
   font-size: 19.5px;
   color: #9b7d08;
   text-transform: uppercase;
+}
 
+
+.slider__buttons--mobile {
+  display: none;
+}
+
+.video {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.video__controls {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  transition: transformX(-50%);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-size: 0;
+  line-height: 0;
+}
+
+.play {
+  width: 27px;
+  height: 27px;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-image: url('./assets/images/play-square.png');
+}
+
+.progress {
+  width: 404px;
+  height: 12px;
+  margin: 0 20px;
+  -webkit-appearance: none;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(left, rgba(245, 197, 6, 1) 0%, rgba(245, 197, 6, 1) 25%, rgba(245, 197, 6, 0.28) 0%);
+  outline: none;
+}
+
+.progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+
+}
+
+.volume {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-image: url('./assets/images/volume-icon.svg');
+  background-color: transparent;
+}
+
+.video__title--mobile {
+  display: none;
 }
