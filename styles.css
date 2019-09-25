@@ -165,12 +165,12 @@ button::-moz-focus-inner,
   text-transform: uppercase;
 }
 
-
 .slider__buttons--mobile {
   display: none;
 }
 
 .video {
+  z-index: -1;
   position: relative;
   margin: 0;
   padding: 0;
@@ -215,7 +215,6 @@ button::-moz-focus-inner,
   background-color: transparent;
   width: 18px;
   height: 18px;
-
 }
 
 .volume {
