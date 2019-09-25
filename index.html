@@ -14,7 +14,7 @@
         </div>
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__item"><a class="header__link"><img class="header__icon" src="./assets/images/avatar-icon.svg" />About</a></lic>
+            <li class="header__item"><a class="header__link"><img class="header__icon" src="./assets/images/avatar-icon.svg" />About us</a></lic>
             <li class="header__item"><a class="header__link"><img class="header__icon" src="./assets/images/settings-icon.svg" />Services</a></li>
             <li class="header__item"><a class="header__link"><img class="header__icon" src="./assets/images/message-icon.svg" />Contact</a></li>
           </ul>
@@ -22,15 +22,24 @@
       </header>
       
       <main>
-        <section>
-          <div>
-            <div>
+        <section class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__buttons slider__buttons--mobile">
               <button>Right</button>
               <button>Left</button>
             </div>
-            <figure>
-              <video></video>
-              <figcaption>Cool minimal</figcaption>
+            <figure class="video">
+              <video poster="./assets/images/poster.jpg"></video>
+              <figcaption class="video__title--mobile">Cool minimal</figcaption>
+              <div class="video__controls">
+                <button class="play" type="button">
+                  Play/Pause
+                </button>
+                <input class="progress" type="range" min="0" max="100" value="30"/>
+                <button class="volume" type="button">
+                  Volume
+                </button>
+              </div>
             </figure>
           </div>
         </section>
@@ -64,8 +73,8 @@
             <li></li>
           </ul>
         </section>
-        
       </main>
+
       <footer>
         <div>
           <img>
