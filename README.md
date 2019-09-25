@@ -15,8 +15,8 @@ Care about lines and colors.
 
 ##### 1. Header
 - Interactive nav.
-- Logo
-- Think of where h1 should be used.
+- Logo - done
+- Think of where h1 should be used. - done
 ##### 2. Main
 - Video element placed with image placeholder.
 - Slider buttons could be inactive, but should exist.
