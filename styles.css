@@ -1,7 +1,7 @@
 /* *Fonts */
 
 @font-face {
-  font-family: 'Segoe WP';
+  font-family: 'SegoeWP';
   font-style: normal;
   font-weight: normal;
   src: url('./assets/font/SegoeWP.woff') format('woff');
@@ -33,6 +33,20 @@
   font-style: normal;
   font-weight: normal;
   src: url('./assets/fonts/Asap-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Segoe WP light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/segoe-wp-light.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Segoe UI light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/10389.ttf') format('ttf');
 }
 
 /* *Normalize */
@@ -89,8 +103,7 @@ button::-moz-focus-inner,
 .page-container {
   margin: 0 auto;
   padding: 0;
-  max-width: 640px;
-  min-width: 300px;
+  width: 640px;
 }
 
 .header {
@@ -104,7 +117,7 @@ button::-moz-focus-inner,
   display: flex;
   flex-flow: row nowrap;
   margin: 0;
-  padding: 10px;
+  padding: 3px 10px;
   background-color: #585858;
   align-items: center;
 }
@@ -115,9 +128,13 @@ button::-moz-focus-inner,
 }
 
 .logo__title {
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
   font-family: 'Lucida Sans', sans-serif;
   font-size: 19px;
   font-style: italic;
+  font-weight: normal;
   color: #fff;
   text-transform: uppercase;
   text-shadow: 2px 2px 0  rgba(0, 0, 0, 0.42) ;
@@ -142,7 +159,7 @@ button::-moz-focus-inner,
   display: flex;
   flex-flow: row nowrap;
   margin: 0 auto;
-  padding: 20px 10px;
+  padding: 15px 7px;
   border-left: 1px solid #b99403;
 }
 
@@ -154,7 +171,7 @@ button::-moz-focus-inner,
   display: inline-block;
   width: 25px;
   height: 25px;
-  margin: 0;
+  margin: 0 5px;
   padding: 0;
 }
 
@@ -180,9 +197,10 @@ button::-moz-focus-inner,
 
 .video__controls {
   position: absolute;
-  bottom: 40px;
-  left: 50px;
-  transition: transformX(-50%);
+  width: 540px;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-43%);
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -233,7 +251,7 @@ button::-moz-focus-inner,
 
 .advantages {
   min-height: 179px;
-  margin-top: -15px;
+  margin-top: -9px;
   background:
     url('./assets/images/advantages-bg.png') 0 0/ contain no-repeat,
     url('./assets/images/advantages-bg.png') 0 5px/ contain no-repeat;
@@ -255,9 +273,172 @@ button::-moz-focus-inner,
   padding: 40px 15px;
 }
 
+.advantages__icon {
+  width: 100px;
+  height: 70px;
+  margin: 0 auto;
+}
+
 .advantages__text {
-  font-family: 'Segoe UI', sans-serif;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'Segoe UI light';
   font-size: 23px;
   text-transform: uppercase;
   text-align: center;
 }
+
+.resources {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.resources__wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.resources__title--mobile {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resources__lorem {
+  background-color: #ec9e03;
+  width: 300px;
+  max-height: 233px;
+  overflow: auto;
+  margin: 0 7px 10px 10px;
+}
+
+.resources__lorem-text {
+  margin: 0;
+  padding: 23px;
+  color: #fff;
+  font-family: 'Segoe UI light', sans-serif;
+  font-size: 29px;
+}
+
+.resources__lorem-text::after {
+  content: url('./assets/images/plus.svg');
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 245px;
+  top: -30px;
+}
+
+.resources__video {
+  position: relative;
+  width: 315px;
+  height: 233px;
+  margin: 0 7px 10px 10px;
+}
+
+.resources__play {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resources__twitter {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  min-width: 580px;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: #f5c507;
+  background-image: url('./assets/images/twittericon.svg');
+  background-repeat: no-repeat;
+  background-position: 18% 70%;
+}
+
+.resources__list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  list-style: none;
+  margin: 8px 0;
+  padding: 0;
+}
+
+.resources__item {
+  width: 275px;
+  margin: 9px 0;
+  padding: 7px 0 7px 50px;
+  font-family: 'Arial';
+  font-size: 13px;  
+  color: #8f8e8e;
+  border-radius: 10px;
+  background-position: 30px;
+}
+
+.resources__item--1 {
+  background-image: url('./assets/images/twitt.png');
+  background-repeat: no-repeat;
+}
+
+.resources__item--2 {
+  background-image: url('./assets/images/twitt-2.png');
+  background-repeat: no-repeat;
+}
+
+.resources__item--3 {
+  background-image: url('./assets/images/twitt-3.png');
+  background-repeat: no-repeat;
+}
+
+.devices {
+  margin: 0;
+  padding: 0;
+  background-color: #474747;
+}
+
+.devices__title {
+  margin: 0;
+  padding: 0;
+  font-family: 'OpenSans';
+  font-size: 39px;
+  font-weight: normal;
+  color: #f5c506;
+  text-align: center;
+}
+
+.devices__free {
+  position: relative;
+  top: 20px;
+  left: 50px;
+  width: 116px;
+  margin: 0;
+  padding: 48px 0;
+  font-family: 'PTSans', sans-serif;
+  font-size: 19px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f5c506;
+  border-radius: 50%;
+}
+
+.devices__list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
+
+.footer-logo {
+  padding-left: 65px;
+  box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.72); 
+  }
+
