@@ -317,10 +317,11 @@ button::-moz-focus-inner,
 
 .resources__lorem-text {
   margin: 0;
-  padding: 23px;
+  padding: 23px 30px;
   color: #fff;
   font-family: 'Segoe UI light', sans-serif;
   font-size: 29px;
+  line-height: 33px;
 }
 
 .resources__lorem-text::after {
@@ -366,6 +367,7 @@ button::-moz-focus-inner,
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
+  width: 285px;
   list-style: none;
   margin: 8px 0;
   padding: 0;
@@ -374,12 +376,15 @@ button::-moz-focus-inner,
 .resources__item {
   width: 275px;
   margin: 9px 0;
-  padding: 7px 0 7px 50px;
+  padding-top: 8px;
+  padding-right: 0;
+  padding-left: 15px;
+  padding-bottom: 8px;
   font-family: 'Arial';
   font-size: 13px;  
   color: #8f8e8e;
   border-radius: 10px;
-  background-position: 30px;
+  background-clip: border-box;
 }
 
 .resources__item--1 {
@@ -397,26 +402,61 @@ button::-moz-focus-inner,
   background-repeat: no-repeat;
 }
 
-.devices {
-  margin: 0;
+.twitt__form {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
   padding: 0;
+  border-radius: 10px;
+  border: 1px solid #d0a806;
+}
+
+.twitt__input {
+  margin: 0;
+  line-height: 30px;
+  border-radius: 10px 0 0 10px;
+  border: 0;
+  outline: none;
+  -webkit-box-shadow: inset 3px 3px 5px 0px rgba(50, 50, 50, 0.25);
+  -moz-box-shadow:    inset 3px 3px 5px 0px rgba(50, 50, 50, 0.25);
+  box-shadow:         inset 3px 3px 5px 0px rgba(50, 50, 50, 0.25);}
+
+.twitt__submit {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #fff;
+  line-height: 30px;
+  background: #ec9e03;
+  background: linear-gradient(to bottom rgba(50, 50, 50, 0.25));;
+  border-radius: 0 10px 10px 0;
+  border: 0;
+  outline: none;  
+}
+
+.devices {
+  position: relative;
+  margin: 0;
+  padding: 55px 20px;
   background-color: #474747;
+  box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.72); 
 }
 
 .devices__title {
   margin: 0;
+  margin-bottom: 70px;
   padding: 0;
   font-family: 'OpenSans';
   font-size: 39px;
   font-weight: normal;
   color: #f5c506;
-  text-align: center;
+  text-transform: uppercase;
 }
 
 .devices__free {
-  position: relative;
-  top: 20px;
-  left: 50px;
+  position: absolute;
+  top: 125px;
+  left: 25px;
   width: 116px;
   margin: 0;
   padding: 48px 0;
@@ -434,11 +474,20 @@ button::-moz-focus-inner,
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  align-items: baseline;
 }
 
+.devices__list  li {
+  margin-right: 25px;
+}
+
+.devices__list  li:not(:first-child) {
+  margin-top: auto;
+  margin-bottom: 40px;
+}
+
+
 .footer-logo {
-  padding-left: 65px;
+  padding: 5px 65px;
   box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.72); 
-  }
+}
 
