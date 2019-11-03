@@ -189,7 +189,7 @@ button::-moz-focus-inner,
   text-decoration: none;
 }
 
-.slider__buttons {
+.slider__button {
   display: none;
 }
 
