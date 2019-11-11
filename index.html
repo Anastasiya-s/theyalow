@@ -1,133 +1,161 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-f">
-    <title>Theyalow</title>
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-  <body>
-    <div class="page-container">
-      <header class="header">
-        <div class="logo__wrapper">
-          <img class="logo__img" src="./assets/images/logo.png"/>
-          <h1 class="logo__title">Theyalow</h1>
-        </div>
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item"><a class="header__link" href="#"><img class="header__icon" src="./assets/images/avatar-icon.svg" />About us</a></lic>
-            <li class="header__item"><a class="header__link" href="#"><img class="header__icon" src="./assets/images/settings-icon.svg" />Services</a></li>
-            <li class="header__item"><a class="header__link" href="#"><img class="header__icon" src="./assets/images/message-icon.svg" />Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-      <main>
-        <section class="slider">
-          <div class="slider__button slider__button--left">Right</div>
-          <div class="slider__button slider__button--right">Left</div>
-          <div class="slider__wrapper">
-            <div class="slide">
-              <div class="video__wrapper">
-                <video class="video" poster="./assets/images/poster.jpg"></video>
-                <div class="video__controls">
-                  <button class="play" type="button">
-                    Play/Pause
-                  </button>
-                  <input class="progress" type="range" min="0" max="100" value="30"/>
-                  <button class="volume" type="button">
-                    Volume
-                  </button>
-                </div>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Theyalow</title>
+      <link rel="stylesheet" href="./styles.css">
+    </head>
+  <body class="page-container">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="none">
+      <g id="plus" >
+        <path class="resources__plus-color" d="M295.724,780.325h-3.507v3.506h-2.631v-3.506h-3.507V777.7h3.507V774.19h2.631V777.7h3.507v2.629Z" transform="translate(-286.094 -774.188)"/>
+      </g>
+    </svg>
+    <header class="header container">
+      <div class="logo__wrapper">
+        <img class="logo__img" src="./assets/images/logo.png" alt="Theyalow"/>
+        <h1 class="logo__title">Theyalow</h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#">
+              <img class="header__icon" src="./assets/images/avatar-icon.svg" alt="About us"/>
+              <span>About us</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">
+              <img class="header__icon" src="./assets/images/settings-icon.svg" alt="Services"/>
+              Services
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">
+              <img class="header__icon" src="./assets/images/message-icon.svg" alt="Contacts"/>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="slider">
+        <h2 class="visually-hidden">Video</h2>
+        <div class="slider__button slider__button--left">Right</div>
+        <div class="slider__button slider__button--right">Left</div>
+        <div class="slider__wrapper">
+          <div class="slide">
+            <div class="video__wrapper">
+              <video class="video" poster="./assets/images/poster.jpg">
+              </video>
+              <div class="video__controls">
+                <button class="play" type="button">
+                  Play/Pause
+                </button>
+                <input class="progress" type="range" min="0" max="100" value="30"/>
+                <button class="volume" type="button">
+                  Volume
+                </button>
               </div>
-              <div class="description__wrapper">
-                <p class="video__title video__title--cool">The Cool</p>
-                <p class="video__title video__title--minimal">The minimal</p>
+            </div>
+            <div class="description__wrapper">
+              <span class="video__title video__title--cool">The Cool</span>
+              <span class="video__title video__title--minimal">The minimal</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Our advantages</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img class="advantages__icon" src="./assets/images/cloud-icon.svg" alt="Better design" width="110" height="90"/>
+            <span class="advantages__text">
+              Better design
+            </span>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__icon" src="./assets/images/letter-icon.svg" alt="Customize"  width="96" height="90"/>
+            <span class="advantages__text">
+              Customize
+            </span>
+          </li>
+          <li class="advantages__item">
+            <img class="advantages__icon" src="./assets/images/tg-icon.svg" alt="It's free" width="85" height="90"/>
+            <span class="advantages__text">
+              It's free
+            </span>
+          </li>
+        </ul>
+      </section>
+      <section class="resources">
+        <h2 class="resources__title">Lorem ipsum dolor sit amet</h2>
+        <div class="resources__container">
+          <div class="resources__wrapper">
+            <div class="resources__lorem">
+              <p class="resources__lorem-text">
+                  Lorem ipsum dolor sit amet, consecte-tur adipisicing elit, sed do eiusmod tempor incididunt ut              
+                </p>
+              <svg class="resources__plus" >
+                <use class="resources__plus-color" href="#plus"></use>
+              </svg>
+            </div>
+            <div class="resources__video">
+              <video class="resources__video-poster" poster="./assets/images/lorem-video-poster.jpg">
+              </video>
+              <img class="resources__play" src="./assets/images/play-icon-round.png" alt="play"/>
+            </div>
+          </div>
+          <div class="resources__wrapper">
+            <div class="resources__twitter">
+              <ul class="resources__list">
+                <li class="resources__item resources__item--1">Daily Mobile UI Design Inspiration #1  via @cssauthor</li>
+                <li class="resources__item resources__item--2">Daily Mobile UI Design Inspiration #1  via @cssauthor</li>
+                <li class="resources__item resources__item--3">Daily Mobile UI Design Inspiration #1  via @cssauthor</li>
+              </ul>
+              <form class="twitt__form">
+                <input class="twitt__input" type="text" />
+                <button class="twitt__submit" type="submit">Tweet</button>              
+              </form>
+              <div class="twitter__desktop">
+                <div class="twitter__data">22</div>
+                <svg class="twitter__add" viewbox="-4 -4 22 22"><use class="twitter__add-icon" href="#plus" ></use></svg>
               </div>
             </div>
           </div>
-        </section>
-        <section class="advantages">
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <img class="advantages__icon" src="./assets/images/cloud-icon.svg" alt="Better design"/>
-              <p class="advantages__text">
-                Better design
-              </p>
-            </li>
-            <li class="advantages__item">
-              <img class="advantages__icon" src="./assets/images/letter-icon.svg" alt="Customize"/>
-              <p class="advantages__text">
-                Customize
-              </p>
-            </li>
-            <li class="advantages__item">
-              <img class="advantages__icon" src="./assets/images/tg-icon.svg" alt="It's free"/>
-              <p class="advantages__text">
-                It's free
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section class="resources">
-          <h2 class="resources__title">Lorem ipsum dolor sit amet</h2>
-          <div class="resources__container">
-            <div class="resources__wrapper">
-              <section class="resources__lorem">
-                <p class="resources__lorem-text">
-                    Lorem ipsum dolor sit amet, consecte-tur adipisicing elit, sed do eiusmod tempor incididunt ut              
-                  </p>
-                <svg class="resources__plus" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
-                    <path fill="#fff" d="M295.724,780.325h-3.507v3.506h-2.631v-3.506h-3.507V777.7h3.507V774.19h2.631V777.7h3.507v2.629Z"/>
-                </svg>
-              </section>
-              <section class="resources__video">
-                <video class="resources__video-poster" poster="./assets/images/lorem-video-poster.jpg">
-  
-                </video>
-                <img class="resources__play" src="./assets/images/play-icon-round.png" />
-              </section>
-            </div>
-            <div class="resources__wrapper">
-              <section class="resources__twitter">
-                <ul class="resources__list">
-                  <li class="resources__item resources__item--1">Daily Mobile UI Design Inspiration #1  via @cssauthor</li>
-                  <li class="resources__item resources__item--2">Daily Mobile UI Design Inspiration #1  via @cssauthor</li>
-                  <li class="resources__item resources__item--3">Daily Mobile UI Design Inspiration #1  via @cssauthor</li>
-                </ul>
-                <form class="twitt__form">
-                  <input class="twitt__input" type="text" />
-                  <button class="twitt__submit" type="submit">Tweet</button>              
-                </form>
-              </section>
-            </div>
-          </div>
-          <input class="resources__progress" type="range" min="0" max="100" value="30"/>
-        </section>
-        <section class="devices">
-          <h2 class="devices__title">Lorem ipsum dolor sit amet</h2>
-          <div class="devices__wrapper">
-            <p class="devices__free">It's free</p>
-            <ul class="devices__list">
-              <li><img src="./assets/images/pc.png" /></li>
-              <li><img src="./assets/images/tablet.png" /></li>
-              <li><img src="./assets/images/phone.png" /></li>
-            </ul>
-            <ul class="some__list">
-              <li class="some__item">Sed ut perspiciatis unde omnis copy</li>
-              <li class="some__item">Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-              <li class="some__item">Sed ut perspiciatis unde omnis</li>
-              <li class="some__item">Lorem ipsum dolor sit amet, consectetur adipisicing </li>
-            </ul>
-          </div>
-        </section>
-      </main>
-
-      <footer class="page-footer">
-        <div class="footer-logo logo__wrapper">
-          <img class="logo__img" src="./assets/images/logo.png"/>
-          <h1 class="logo__title">Theyalow</h1>
         </div>
-      </footer>
-    </div>
+        <div class="resources__data">
+          <span class="data__count">25</span>
+          <span class="data__month">APRIL</span>
+        </div>
+        <input class="resources__progress" type="range" min="0" max="100" value="30"/>
+      </section>
+      <section class="devices">
+        <h2 class="devices__title">Lorem ipsum dolor sit amet</h2>
+        <div class="devices__wrapper">
+          <span class="devices__free">It's free</span>
+          <ul class="devices__list">
+            <li><img src="./assets/images/pc.png" alt="PC"/></li>
+            <li><img src="./assets/images/tablet.png" alt="Tablet" /></li>
+            <li><img src="./assets/images/phone.png" alt="Mobile" /></li>
+          </ul>
+          <ul class="some__list">
+            <li class="some__item">Sed ut perspiciatis unde omnis copy</li>
+            <li class="some__item">Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+            <li class="some__item">Sed ut perspiciatis unde omnis</li>
+            <li class="some__item">Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer container">
+      <div class="footer-logo logo__wrapper">
+        <img class="footer-logo__img" src="./assets/images/logo.svg" alt="Theyalow" />
+        <h1 class="footer-logo__title">Theyalow</h1>
+      </div>
+    </footer>
     </body>
     </html>
